@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ============================================================
+     EDIT THESE THREE LINES: replace USERNAME and REPO everywhere
+     ============================================================ -->
+<meta property="og:url" content="https://USERNAME.github.io/REPO/notability.html">
+<meta property="og:image" content="https://USERNAME.github.io/REPO/notability-icon.png">
+<meta property="og:title" content="Notability">
+
+<meta property="og:description" content="Open the Notability app.">
+<meta property="og:type" content="website">
+<title>Notability</title>
+
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100svh;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    font-family: ui-sans-serif, -apple-system, "Segoe UI", system-ui, sans-serif;
+    background: #fbfbfa;
+    color: #191918;
+  }
+  .card {
+    width: 100%;
+    max-width: 380px;
+    text-align: center;
+  }
+  .mark {
+    width: 64px; height: 64px;
+    margin: 0 auto 20px;
+    border-radius: 14px;
+    object-fit: cover;
+    display: block;
+  }
+  h1 {
+    margin: 0 0 6px;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+  p {
+    margin: 0 0 28px;
+    font-size: 14.5px;
+    line-height: 1.5;
+    color: #6b6b68;
+  }
+  a.launch {
+    display: block;
+    padding: 14px 20px;
+    border-radius: 10px;
+    background: #191918;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: opacity .15s ease;
+  }
+  a.launch:hover { opacity: .85; }
+  a.launch:focus-visible { outline: 2px solid #4a7dff; outline-offset: 3px; }
+  .hint {
+    margin: 22px 0 0;
+    font-size: 12.5px;
+    color: #96968f;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { background: #191918; color: #f2f2ef; }
+    p { color: #9a9a94; }
+    a.launch { background: #f2f2ef; color: #191918; }
+    .hint { color: #6b6b68; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    a.launch { transition: none; }
+  }
+</style>
+</head>
+<body>
+  <main class="card">
+    <img class="mark" src="notability-icon.png" alt="">
+    <h1>Notability</h1>
+    <p>Tap below to launch the app.</p>
+
+    <!-- Runs the Apple Shortcut named OpenNotability.
+         If you named your shortcut something else, change it here.
+         Spaces in the name must be written as %20 -->
+    <a class="launch" href="shortcuts://run-shortcut?name=OpenNotability">Open Notability</a>
+
+    <p class="hint">Requires the Shortcut named OpenNotability. Apple devices only.</p>
+  </main>
+</body>
+</html>
