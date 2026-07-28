@@ -1,5 +1,5 @@
 # app-links
 
-Notability: ?v=15
+Notability: 16th time changed icon
 
-Obsidian: ?v=5
+Obsidian: 5
